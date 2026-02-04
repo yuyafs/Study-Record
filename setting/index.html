@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="setting-screen">
+
+        <div class="header-area">
+            <div class="header" onclick="history.back()">＜</div>
+            <h2 class="title-center">設定</h2>
+        </div>
+
+        <div class="section">
+            <h3>ポモドーロ設定</h3>
+
+            <label>
+                作業時間 (分)
+                <input type="number" id="workTime" value="25" min="1">
+            </label>
+
+            <label>
+                休憩時間 (分)
+                <input type="number" id="breakTime" value="5" min="1">
+            </label>
+        </div>
+
+        <div class="section">
+            <h3>通知</h3>
+
+            <label class="checkbox">
+                <input type="checkbox" id="notify">
+                タイマー終了時に通知する
+            </label>
+        </div>
+
+        <button id="saveBtn">保存</button>
+    </div>
+    
+</body>
+</html>

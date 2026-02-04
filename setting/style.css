@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #2ec4b6, #90dbf4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.setting-screen {
+    width: 90%;
+    max-width: 360px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.header-area {
+    position: relative;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.header {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e6f7f5;
+    color: #2ec4b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    user-select: none;
+}
+
+.title-center {
+    text-align: center;
+    font-size: 25px;
+    color: #2ec4b6;
+    line-height: 32px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.section h3 {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+input[type="number"] {
+    width: 75px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.checkbox {
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#saveBtn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #2ec4b6;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#saveBtn:active {
+    transform: scale(0.97);
+}

@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #2ec4b6, #2ec4b6, #90dbf4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.menu-screen {
+    width: 90%;
+    max-width: 360px;
+    background: #ffffff;
+    padding: 25px 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+    justify-content: center;
+}
+
+.back-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e6f7f5;
+    color: #2ec4b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    font-size: 25px;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 10px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.back-btn:hover {
+    background: #c9f4ed;
+}
+
+.back-btn:active {
+    transform: scale(0.9);
+}
+
+.menu-title {
+    font-size: 25px;
+    color: #2ec4b6;
+}
+
+.time-box {
+    background: #f1f1f1;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.time-label {
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+}
+
+.time-value {
+    font-size: 22px;
+    color: #2ec4b6;
+    font-weight: bold;
+    margin-top: 6px;
+}
