@@ -3,32 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pomodoro</title>
+    <title>StudyMate</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+        <div class="start-screen">
 
-    <div class="pomodoro-screen">
+    <img src="..//images/地球儀.png" alt="" class="home-logo">
+        <h1 class="title">StudyMate</h1>
+        <p class="subtitle">学習を記録して成長しよう</p>
 
-        <div class="header">
-            <span class="back-btn" onclick="location.href='../menu/index.html'">＜</span>
-            <h2 class="pomodoro-center">ポモドーロタイマー</h2>
-        </div> 
-        <div class="clock">
-            <div class="hand"></div>
-            <div class="center-dot"></div>
-        </div>
-
-        <div class="timer">
-            <span id="minutes">25</span>
-            <span>:</span>
-            <span id="secodnds">00</span>
-        </div>
-
-        <div class="controls">
-            <button id="startBtn">スタート</button>
-            <button id="resetBtn">リセット</button>
-        </div>
+        <button id="startBtn">学習を始める</button>
     </div>
     
     <script src="script.js" defer></script>
