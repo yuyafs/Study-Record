@@ -1,60 +1,49 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
     height: 100vh;
     background: linear-gradient(135deg, #2ec4b6, #2ec4b6, #90dbf4);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, sans-serif;
 }
 
-.start-screen {
-    background: #fff;
+.menu-screen {
     width: 90%;
     max-width: 360px;
-    padding: 40px 20px;
+    background: #ffffff;
+    padding: 30px 20px;
     border-radius: 20px;
-    text-align: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
 
+.menu-title {
+    text-align: center;
+    color: #2ec4b6;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.menu-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 15px;
 }
 
-.home-logo {
-    width: 370px;
-    margin-bottom: 30px;
-}
-
-.title {
-    font-size: 28px;
-    color: #2ec4b6;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 30px;
-}
-
-#startBtn {
-    width: 100%;
+.menu-item {
     padding: 15px;
     font-size: 16px;
-    background: #ffd166;
     border: none;
-    border-radius: 30px;
+    border-radius: 12px;
+    background: #f1f1f1;
     cursor: pointer;
-    transition: 0.3;
+    transition: 0.2s;
 }
 
-#startBtn:hover {
+.menu-item:hover {
+    background: #2ec4b6;
+    color: #ffffff;
+}
+
+.menu-item.setting:hover {
     background: #ffbe0b;
 }

@@ -1,6 +1,19 @@
-const startBtn = document.getElementById("startBtn");
+const menuItems = document.querySelectorAll(".menu-item");
 
-startBtn.addEventListener("click", () => {
-    //仮の動作（次の画面がまだないので）
-    window.location.href = "..//menu/index.html";
+menuItems.forEach(item => {
+    item.addEventListener("click", () => {
+        const menu = item.dataset.menu;
+
+        if (menu === "total") {
+            window.location.href = "..//total/index.html";
+        }
+
+        if (menu === "pomodoro") {
+            window.location.href = "..//pomodoro/index.html";
+        }
+
+        if (menu === "setting") {
+            window.location.href = "..//setting/index.html";
+        }
+    });
 });
